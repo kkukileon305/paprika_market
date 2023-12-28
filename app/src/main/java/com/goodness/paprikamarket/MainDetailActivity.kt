@@ -1,6 +1,5 @@
 package com.goodness.paprikamarket
 
-import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -25,7 +24,7 @@ class MainDetailActivity : AppCompatActivity() {
 		val product = when (key) {
 			0 -> Product(R.drawable.product1, "에어팟 프로", "9/31일 구매한 \n한달도 안된 제품이빈다. \n박풀 S급입니다.")
 			1 -> Product(R.drawable.product2, "바이레도 블랑쉬 50ml", "ㄷㄷ \nㅁㄴㅇㄹ.")
-			else -> Product(0, "", "") // 기본 처리
+			else -> Product(0, "", "")
 		}
 
 		productImg.setImageResource(product.imgResId)
@@ -34,7 +33,7 @@ class MainDetailActivity : AppCompatActivity() {
 
 		homeButton.setOnClickListener {
 			finish()
-			overridePendingTransition(R.anim.none, R.anim.left_to_right)
+			overridePendingTransition(R.anim.main_none, R.anim.main_left_to_right)
 		}
 	}
 }

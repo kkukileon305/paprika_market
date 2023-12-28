@@ -1,7 +1,5 @@
 package com.goodness.paprikamarket
 
-import android.app.Activity
-import android.app.ActivityOptions
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -29,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 				intent.putExtra("key", index)
 				startActivity(intent)
 
-				overridePendingTransition(R.anim.right_to_left, R.anim.none)
+				overridePendingTransition(R.anim.main_right_to_left, R.anim.main_none)
 			}
 		}
 	}
