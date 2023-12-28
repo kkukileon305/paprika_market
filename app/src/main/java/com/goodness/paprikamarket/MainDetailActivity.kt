@@ -22,8 +22,8 @@ class MainDetailActivity : AppCompatActivity() {
 		val key = intent.getIntExtra("key", 0)
 
 		val product = when (key) {
-			0 -> Product(R.drawable.product1, "에어팟 프로", "9/31일 구매한 \n한달도 안된 제품이빈다. \n박풀 S급입니다.")
-			1 -> Product(R.drawable.product2, "바이레도 블랑쉬 50ml", "ㄷㄷ \nㅁㄴㅇㄹ.")
+			0 -> Product(R.drawable.main_product1, "에어팟 프로", "9/31일 구매한 \n한달도 안된 제품이빈다. \n박풀 S급입니다.")
+			1 -> Product(R.drawable.main_product2, "바이레도 블랑쉬 50ml", "ㄷㄷ \nㅁㄴㅇㄹ.")
 			else -> Product(0, "", "")
 		}
 

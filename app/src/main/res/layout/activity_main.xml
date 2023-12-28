@@ -83,7 +83,7 @@
           <ImageView
                   android:layout_width="110dp"
                   android:layout_height="110dp"
-                  android:src="@drawable/product1"
+                  android:src="@drawable/main_product1"
                   android:scaleType="centerCrop"
           />
         </androidx.cardview.widget.CardView>
@@ -172,7 +172,7 @@
           <ImageView
                   android:layout_width="110dp"
                   android:layout_height="110dp"
-                  android:src="@drawable/product2"
+                  android:src="@drawable/main_product2"
                   android:scaleType="centerCrop"
           />
         </androidx.cardview.widget.CardView>
