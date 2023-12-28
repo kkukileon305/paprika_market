@@ -20,7 +20,6 @@
           android:layout_marginStart="16dp"
           android:gravity="top"
   />
-
   <ImageView
           android:id="@+id/iv_tab"
           android:layout_width="14dp"
@@ -31,7 +30,6 @@
           app:layout_constraintBottom_toBottomOf="@id/tv_title"
           android:layout_marginStart="6dp"
   />
-
   <ImageView
           android:id="@+id/iv_menu"
           android:layout_width="28dp"
@@ -42,7 +40,6 @@
           android:layout_marginTop="12dp"
           android:layout_marginEnd="16dp"
   />
-
   <View
           android:id="@+id/v_line"
           android:layout_width="match_parent"
@@ -53,7 +50,6 @@
           android:layout_marginTop="12dp"
           android:background="#8C8C8C"
   />
-
   <ScrollView
           android:layout_width="match_parent"
           android:layout_height="0dp"
@@ -68,6 +64,7 @@
             android:orientation="vertical"
     >
       <androidx.constraintlayout.widget.ConstraintLayout
+              android:id="@+id/cl_product1"
               android:layout_width="match_parent"
               android:layout_height="142dp"
               android:paddingTop="16dp"
@@ -156,6 +153,7 @@
         />
       </androidx.constraintlayout.widget.ConstraintLayout>
       <androidx.constraintlayout.widget.ConstraintLayout
+              android:id="@+id/cl_product2"
               android:layout_width="match_parent"
               android:layout_height="142dp"
               android:paddingTop="16dp"
@@ -369,6 +367,5 @@
               app:layout_constraintBottom_toBottomOf="parent"
       />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
   </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
