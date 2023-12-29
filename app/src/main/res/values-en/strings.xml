@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Paprika Market</string>
+    <string name="chat_title">Chat</string>
+    <string name="chat_location1">A Street</string>
+    <string name="chat_time1">1 week ago</string>
+    <string name="chat_message1">Thanks. Goodbye.</string>
+    <string name="chat_location2">B Street</string>
+    <string name="chat_message2">It was a good deal.</string>
+    <string name="chat_time2">2 weeks ago</string>
+</resources>

@@ -21,7 +21,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="채팅"
+            android:text="@string/chat_title"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -102,7 +102,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:text="XX동"
+                android:text="@string/chat_location1"
                 app:layout_constraintStart_toEndOf="@id/tv_username"
 
                 app:layout_constraintTop_toTopOf="@+id/tv_username" />
@@ -112,7 +112,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:text="1주 전"
+                android:text="@string/chat_time1"
                 app:layout_constraintStart_toEndOf="@id/tv_area"
                 app:layout_constraintTop_toTopOf="@+id/tv_username" />
 
@@ -121,7 +121,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="감사합니다! 조심히가세요!"
+                android:text="@string/chat_message1"
                 app:layout_constraintBottom_toBottomOf="@+id/iv_user_img"
                 app:layout_constraintStart_toEndOf="@id/iv_user_img" />
 
@@ -173,7 +173,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:text="XX동"
+                android:text="@string/chat_location2"
                 app:layout_constraintStart_toEndOf="@id/tv_username2"
                 app:layout_constraintTop_toTopOf="@+id/tv_username2" />
 
@@ -182,7 +182,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:text="3주 전"
+                android:text="@string/chat_time2"
                 app:layout_constraintStart_toEndOf="@id/tv_area2"
                 app:layout_constraintTop_toTopOf="@+id/tv_username2" />
 
@@ -191,7 +191,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="좋은 거래 했습니다!"
+                android:text="@string/chat_message2"
                 app:layout_constraintBottom_toBottomOf="@+id/iv_user_img2"
                 app:layout_constraintStart_toEndOf="@id/iv_user_img2" />
 

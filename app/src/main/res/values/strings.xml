@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Paprika Market</string>
+    <string name="app_name">파프리카 마켓</string>
+    <string name="chat_title">채팅</string>
+    <string name="chat_location1">XX동</string>
+    <string name="chat_time1">1주 전</string>
+    <string name="chat_message1">감사합니다! 조심히가세요!</string>
+    <string name="chat_location2">XX동</string>
+    <string name="chat_message2">좋은 거래 했습니다!</string>
+    <string name="chat_time2">2주 전</string>
 </resources>
