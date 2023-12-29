@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Paprika Market</string>
+  <string name="main_title">Gunzadong</string>
+  <string name="main_product_1">AirPods Pro</string>
+  <string name="main_product_time_1">Gunzadong 3 sec</string>
+  <string name="main_product_2">Byredo Blanche 50ml</string>
+  <string name="main_product_time_2">Gu Office 3rd, Gwangjin-gu 26 seconds ago</string>
+  <string name="main_menu_home">Home</string>
+  <string name="main_menu_town">Neighborhood Life</string>
+  <string name="main_menu_place">Near Me</string>
+  <string name="main_menu_chat">Chat</string>
+  <string name="main_menu_carrot">My Carrot</string>
+  <string name="main_post_1">Looking for someone to drink beer~~</string>
+  <string name="main_post_desc_1">Dont send direct messages ㄱㄱ!!</string>
+  <string name="main_post_place_1">Hwayang-dong</string>
+  <string name="main_post_time_1">3 minutes ago</string>
+  <string name="main_post_2">Post 2</string>
+  <string name="main_post_desc_2">asd ㄱㄱ!!</string>
+  <string name="main_post_place_2">Hwayang-dong</string>
+  <string name="main_post_time_2">3 minutes ago</string>
+</resources>

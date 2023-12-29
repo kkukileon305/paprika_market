@@ -1,9 +1,12 @@
 package com.goodness.paprikamarket
 
 import android.content.Intent
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.constraintlayout.widget.ConstraintLayout
+import java.util.Locale
 
 class TownActivity : AppCompatActivity() {
 	private val postButtons by lazy {
@@ -37,5 +40,6 @@ class TownActivity : AppCompatActivity() {
 				overridePendingTransition(R.anim.main_right_to_left, R.anim.main_none)
 			}
 		}
+
 	}
 }

@@ -1,3 +1,21 @@
 <resources>
-  <string name="app_name">Paprika Market</string>
+  <string name="app_name">파프리카 마켓</string>
+  <string name="main_title">군자동</string>
+  <string name="main_product_1">에어팟 프로</string>
+  <string name="main_product_time_1">군자동 3초 전</string>
+  <string name="main_product_2">바이레도 블랑쉬 50ml</string>
+  <string name="main_product_time_2">광진구 구의제3동 26초 전</string>
+  <string name="main_menu_home">홈</string>
+  <string name="main_menu_town">동네생활</string>
+  <string name="main_menu_place">내 근처</string>
+  <string name="main_menu_chat">채팅</string>
+  <string name="main_menu_carrot">나의 당근</string>
+  <string name="main_post_1">맥주마실 사람~~</string>
+  <string name="main_post_desc_1">쪽지주지마세요 ㄱㄱ!!</string>
+  <string name="main_post_place_1">화양동</string>
+  <string name="main_post_time_1">3분 전</string>
+  <string name="main_post_2">글 2</string>
+  <string name="main_post_desc_2">asd ㄱㄱ!!</string>
+  <string name="main_post_place_2">화양동</string>
+  <string name="main_post_time_2">3분 전</string>
 </resources>
