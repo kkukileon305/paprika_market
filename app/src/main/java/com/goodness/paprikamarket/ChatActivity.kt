@@ -23,15 +23,7 @@ class ChatActivity : AppCompatActivity() {
             findViewById(R.id.btn_nav_profile)
         )
     }
-    private val navIcons: List<ImageView> by lazy {
-        listOf(
-            findViewById(R.id.iv_nav_home_icon),
-            findViewById(R.id.iv_nav_news_icon),
-            findViewById(R.id.iv_nav_nearby_icon),
-            findViewById(R.id.iv_nav_chat_icon),
-            findViewById(R.id.iv_nav_profile_icon)
-        )
-    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
