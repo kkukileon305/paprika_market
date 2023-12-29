@@ -2,8 +2,10 @@
   <string name="app_name">파프리카 마켓</string>
   <string name="main_title">군자동</string>
   <string name="main_product_1">에어팟 프로</string>
+  <string name="main_product_desc_1">9/31일 구매한 \n한달도 안된 제품이빈다. \n박풀 S급입니다.</string>
   <string name="main_product_time_1">군자동 3초 전</string>
   <string name="main_product_2">바이레도 블랑쉬 50ml</string>
+  <string name="main_product_desc_2">ㅁㄴㅇㅁㄴㅇㅁㄴ</string>
   <string name="main_product_time_2">광진구 구의제3동 26초 전</string>
   <string name="main_menu_home">홈</string>
   <string name="main_menu_town">동네생활</string>

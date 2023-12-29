@@ -17,8 +17,8 @@ class TownDetailActivity : AppCompatActivity() {
 		val key = intent.getIntExtra("key", 0)
 
 		val post = when (key) {
-			0 -> Post("맥주마실 사람~~", "쪽지주지마세요 ㄱㄱ!!")
-			1 -> Post("글 2", "asd ㄱㄱ!!")
+			0 -> Post(getString(R.string.main_post_1), getString(R.string.main_post_desc_1))
+			1 -> Post(getString(R.string.main_post_2), getString(R.string.main_post_desc_2))
 			else -> Post("", "")
 		}
 

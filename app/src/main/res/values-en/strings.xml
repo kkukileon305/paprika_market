@@ -3,8 +3,10 @@
   <string name="app_name">Paprika Market</string>
   <string name="main_title">Gunzadong</string>
   <string name="main_product_1">AirPods Pro</string>
+  <string name="main_product_desc_1">"I bought a product on 9/31, \nand it hasn't even been a month. \nIt's of poor quality, \nS-grade park grass.</string>
   <string name="main_product_time_1">Gunzadong 3 sec</string>
   <string name="main_product_2">Byredo Blanche 50ml</string>
+  <string name="main_product_desc_2">asdasdasdasd</string>
   <string name="main_product_time_2">Gu Office 3rd, Gwangjin-gu 26 seconds ago</string>
   <string name="main_menu_home">Home</string>
   <string name="main_menu_town">Neighborhood Life</string>
