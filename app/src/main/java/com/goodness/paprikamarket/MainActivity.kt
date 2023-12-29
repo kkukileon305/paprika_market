@@ -7,11 +7,13 @@ import androidx.constraintlayout.widget.ConstraintLayout
 
 class MainActivity : AppCompatActivity() {
 	private val productButtons by lazy {
-		listOf(
-			findViewById<ConstraintLayout>(R.id.cl_product1),
-			findViewById<ConstraintLayout>(R.id.cl_product2)
+		listOf<ConstraintLayout>(
+			findViewById(R.id.cl_product1),
+			findViewById(R.id.cl_product2)
 		)
 	}
+
+	private val townButton by lazy { findViewById<ConstraintLayout>(R.id.cl_town) }
 
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
@@ -21,6 +23,13 @@ class MainActivity : AppCompatActivity() {
 	}
 
 	private fun init() {
+		townButton.setOnClickListener {
+			val intent = Intent(this, TownActivity::class.java)
+
+			startActivity(intent)
+			overridePendingTransition(R.anim.main_right_to_left, R.anim.main_none)
+		}
+		
 		productButtons.forEachIndexed { index, productButton ->
 			productButton.setOnClickListener {
 				val intent = Intent(this, MainDetailActivity::class.java)
