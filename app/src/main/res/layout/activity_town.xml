@@ -66,7 +66,7 @@
             android:orientation="vertical"
     >
       <androidx.constraintlayout.widget.ConstraintLayout
-              android:id="@+id/cl_product1"
+              android:id="@+id/cl_post1"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:paddingTop="16dp"
@@ -131,7 +131,7 @@
       </androidx.constraintlayout.widget.ConstraintLayout>
 
       <androidx.constraintlayout.widget.ConstraintLayout
-              android:id="@+id/cl_product2"
+              android:id="@+id/cl_post2"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
               android:paddingTop="16dp"
@@ -143,7 +143,7 @@
                 android:id="@+id/tv_product_title_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="맥주마실 사람~~"
+                android:text="글 2"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -154,7 +154,7 @@
                 android:id="@+id/tv_product_address_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="쪽지주지마세요 ㄱㄱ!!"
+                android:text="asd ㄱㄱ!!"
                 android:textSize="12sp"
                 android:textColor="#8C8C8C"
                 app:layout_constraintLeft_toLeftOf="@id/tv_product_title_2"
