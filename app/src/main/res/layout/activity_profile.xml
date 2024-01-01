@@ -482,7 +482,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="4dp"
-                android:src="@drawable/chat_nav_chat_filled" />
+                android:src="@drawable/chat_nav_chat" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -506,7 +506,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:padding="4dp"
-                android:src="@drawable/chat_nav_user" />
+                android:src="@drawable/chat_nav_user_filled" />
 
             <TextView
                 android:layout_width="wrap_content"
