@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="profile_title">My Paprika</string>
+    <string name="profile_username">USER184</string>
+    <string name="profile_user_location">CA</string>
+    <string name="profile_paprika_pay">Paprika pay</string>
+    <string name="profile_paprika_pay_info">Purchase with Paprika pay</string>
+    <string name="profile_sales_history">Sales history</string>
+    <string name="profile_purchase_history">Purchase history</string>
+    <string name="profile_watchlist">Watchlist</string>
+    <string name="profile_location_setting">Location setting</string>
+    <string name="profile_cashbook">Cashbook</string>
+    <string name="profile_news_post_comment">News post/comment</string>
+    <string name="profile_news_ad">News ad</string>
+    <string name="profile_keyword_notification">Keyword notification</string>
   <string name="app_name">Paprika Market</string>
   <string name="chat_nav_home">Home</string>
   <string name="chat_nav_news">News</string>
