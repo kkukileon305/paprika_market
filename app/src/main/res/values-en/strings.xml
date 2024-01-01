@@ -69,4 +69,5 @@
   <string name="chat_location2">B Street</string>
   <string name="chat_message2">It was a good deal.</string>
   <string name="chat_time2">2 weeks ago</string>
+  <string name="change_language_button">translate language</string>
 </resources>
