@@ -21,6 +21,15 @@ class MainActivity : AppCompatActivity() {
 	private val townButton by lazy { findViewById<ConstraintLayout>(R.id.cl_town) }
 	private val translate by lazy { findViewById<ImageView>(R.id.iv_menu) }
 
+	private val menuButtons by lazy {
+		listOf<ConstraintLayout>(
+			findViewById(R.id.cl_town),
+			findViewById(R.id.cl_near),
+			findViewById(R.id.cl_chat),
+			findViewById(R.id.cl_profile),
+		)
+	}
+
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_main)
@@ -29,11 +38,19 @@ class MainActivity : AppCompatActivity() {
 	}
 
 	private fun init() {
-		townButton.setOnClickListener {
-			val intent = Intent(this, TownActivity::class.java)
+		menuButtons.forEach { button ->
+			button.setOnClickListener {
+				val activity = when (button.id) {
+					R.id.cl_town -> TownActivity::class.java
+					R.id.cl_near -> NearActivity::class.java
+					R.id.cl_chat -> ChatActivity::class.java
+					R.id.cl_profile -> ProfileActivity::class.java
+					else -> null
+				}
+				val intent = Intent(this, activity)
 
-			startActivity(intent)
-			overridePendingTransition(R.anim.main_right_to_left, R.anim.main_none)
+				startActivity(intent)
+			}
 		}
 
 		productButtons.forEachIndexed { index, productButton ->
