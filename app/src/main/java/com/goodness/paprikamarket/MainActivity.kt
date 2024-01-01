@@ -17,8 +17,7 @@ class MainActivity : AppCompatActivity() {
 			findViewById(R.id.cl_product2)
 		)
 	}
-
-	private val townButton by lazy { findViewById<ConstraintLayout>(R.id.cl_town) }
+	
 	private val translate by lazy { findViewById<ImageView>(R.id.iv_menu) }
 
 	private val menuButtons by lazy {
