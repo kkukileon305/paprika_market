@@ -7,4 +7,17 @@
     <string name="chat_location2">XX동</string>
     <string name="chat_message2">좋은 거래 했습니다!</string>
     <string name="chat_time2">2주 전</string>
+    <string name="profile_title">나의 파프리카</string>
+    <string name="profile_username">가나다</string>
+    <string name="profile_user_location">군자동</string>
+    <string name="profile_paprika_pay">파프리카페이</string>
+    <string name="profile_paprika_pay_info">중고거래는 이제 파프리카페이로 해보세요!</string>
+    <string name="profile_sales_history">판매내역</string>
+    <string name="profile_purchase_history">구매내역</string>
+    <string name="profile_watchlist">관심목록</string>
+    <string name="profile_location_setting">내 동네 설정</string>
+    <string name="profile_keyword_notification">키워드 알림</string>
+    <string name="profile_cashbook">파프리카 가계부</string>
+    <string name="profile_news_post_comment">동네생활 글/댓글</string>
+    <string name="profile_news_ad">동네홍보 글</string>
 </resources>

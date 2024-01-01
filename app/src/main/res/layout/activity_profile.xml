@@ -21,7 +21,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="나의 당근"
+            android:text="@string/profile_title"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -89,7 +89,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="12dp"
-                    android:text="가나다"
+                    android:text="@string/profile_username"
                     android:textSize="16dp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toEndOf="@id/iv_user_img"
@@ -99,7 +99,7 @@
                     android:id="@+id/tv_user_location"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="군자동"
+                    android:text="@string/profile_user_location"
                     android:textColor="@color/text_gray"
                     android:textSize="12dp"
                     app:layout_constraintBottom_toBottomOf="@+id/iv_user_img"
@@ -141,7 +141,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="파프리카페이"
+                    android:text="@string/profile_paprika_pay"
                     android:textColor="@color/brand_paprika"
                     android:textSize="14dp"
                     android:textStyle="bold"
@@ -152,7 +152,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="중고거래는 이제 파프리카페이로 해보세요!"
+                    android:text="@string/profile_paprika_pay_info"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -186,7 +186,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="판매내역"
+                        android:text="@string/profile_sales_history"
                         android:textSize="12dp" />
                 </LinearLayout>
 
@@ -205,13 +205,13 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/profile_circle_background"
                         android:scaleType="center"
-                        android:src="@drawable/profile_receipt_24"
+                        android:src="@drawable/profile_shopping_bag_24"
                         app:tint="@color/brand_paprika" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="판매내역"
+                        android:text="@string/profile_purchase_history"
                         android:textSize="12dp" />
                 </LinearLayout>
 
@@ -230,13 +230,13 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/profile_circle_background"
                         android:scaleType="center"
-                        android:src="@drawable/profile_receipt_24"
+                        android:src="@drawable/profile_heart_24"
                         app:tint="@color/brand_paprika" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="판매내역"
+                        android:text="@string/profile_watchlist"
                         android:textSize="12dp" />
                 </LinearLayout>
             </LinearLayout>
@@ -279,7 +279,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="내 동네 설정"
+                    android:text="@string/profile_location_setting"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -299,7 +299,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="키워드 알림"
+                    android:text="@string/profile_keyword_notification"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -319,7 +319,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="당근가계부"
+                    android:text="@string/profile_cashbook"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -353,7 +353,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="동네생활 글/댓글"
+                    android:text="@string/profile_news_post_comment"
                     android:textSize="16sp" />
             </LinearLayout>
 
@@ -373,7 +373,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="동네홍보 글"
+                    android:text="@string/profile_news_ad"
                     android:textSize="16sp" />
             </LinearLayout>
 
