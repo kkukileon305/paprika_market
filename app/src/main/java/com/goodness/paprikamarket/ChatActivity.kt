@@ -43,7 +43,7 @@ class ChatActivity : AppCompatActivity() {
         setOnClickListener {
             val index = navButtons.indexOf(this)
             if (index != -1) {
-                val activityNames = arrayOf("HomeActivity", "NewsActivity", "NearbyActivity", "ChatActivity", "ProfileActivity")
+                val activityNames = arrayOf("MainActivity", "NewsActivity", "NearActivity", "ChatActivity", "ProfileActivity")
                 makeIntent(activityNames[index])
             }
         }

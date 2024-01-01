@@ -35,9 +35,9 @@ class ProfileActivity : AppCompatActivity() {
             val index = navButtons.indexOf(this)
             if (index != -1) {
                 val activityNames = arrayOf(
-                    "HomeActivity",
+                    "MainActivity",
                     "NewsActivity",
-                    "NearbyActivity",
+                    "NearActivity",
                     "ChatActivity",
                     "ProfileActivity"
                 )
@@ -51,8 +51,10 @@ class ProfileActivity : AppCompatActivity() {
             this@ProfileActivity,
             Class.forName("com.goodness.paprikamarket.$activityName")
         ).also {
-            startActivity(it,
-                ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
+            startActivity(
+                it,
+                ActivityOptions.makeSceneTransitionAnimation(this).toBundle()
+            )
         }
     }
 }
