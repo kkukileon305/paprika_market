@@ -139,7 +139,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height=".5dp"
-            android:background="@color/gray" />
+            android:background="@color/text_gray" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl_user_chat2"
@@ -209,7 +209,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height=".5dp"
-            android:background="@color/gray" />
+            android:background="@color/text_gray" />
     </LinearLayout>
 
     <LinearLayout

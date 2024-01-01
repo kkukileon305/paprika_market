@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NearActivity">
+
+    <LinearLayout
+        android:id="@+id/topbarView"
+        style="@style/Widget.MaterialComponents.Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView">
+
+        <Button
+            android:id="@+id/btn_region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="#00ff0000"
+            android:backgroundTint="#00ff0000"
+            android:drawableEnd="@drawable/near_tb_expandmore"
+            android:padding="10dp"
+            android:text="@string/near_tb_name"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="4dp"
+            android:background="#00ff0000"
+            android:backgroundTint="#00ff0000"
+            android:drawableEnd="@drawable/near_tb_search" />
+
+        <Button
+            android:id="@+id/btn_notification"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginEnd="8dp"
+            android:background="#00ff0000"
+            android:backgroundTint="#00ff0000"
+            android:drawableEnd="@drawable/near_tb_notification" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:paddingBottom="130dp"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@+id/topbarView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="parent">
+
+            <LinearLayout
+                android:id="@+id/menu_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/btn_restaurant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00ff0000"
+                    android:drawableTop="@drawable/near_btn_restaurant_resize"
+                    android:text="@string/near_btn_restaurant"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btn_hobby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00ff0000"
+                    android:drawableTop="@drawable/near_btn_hobby_resize"
+                    android:text="@string/near_btn_hobby"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btn_cafe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00ff0000"
+                    android:drawableTop="@drawable/near_btn_cafe_resize"
+                    android:text="@string/near_btn_cafe"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btn_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00ff0000"
+                    android:drawableTop="@drawable/near_btn_more"
+                    android:text="@string/near_btn_more"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btn_pet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00ff0000"
+                    android:drawableTop="@drawable/near_btn_pet_resize"
+                    android:text="@string/near_btn_pet"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_icon_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/menu_icon">
+
+                <Button
+                    android:id="@+id/btn_gym"
+                    android:layout_width="88dp"
+                    android:layout_height="90dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00ff0000"
+                    android:drawableTop="@drawable/near_btn_gym_resize"
+                    android:text="@string/near_btn_gym"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btn_clean"
+                    android:layout_width="88dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#00ff0000"
+                    android:drawableTop="@drawable/near_btn_clean_resize"
+                    android:text="@string/near_btn_clean"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/btn_gym" />
+
+                <View
+                    android:layout_width="176dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_less"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="#00ff0000"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/menu_icon_more"
+                tools:layout_editor_absoluteX="0dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/near_fold"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/near_btn_less"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_store"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="8dp"
+                android:text="@string/near_tv_store"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_less" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tab_layout"
+                style="@style/Widget.MaterialComponents.Toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_store">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_store"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTextColor="#1C1C1C"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/near_tab_restaurant" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/near_tab_health" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/near_tab_life" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/near_tab_all" />
+
+                </com.google.android.material.tabs.TabLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraint_store"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:background="#EAE5E5"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/tab_store">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/store_restaurant"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:layout_editor_absoluteX="-43dp"
+                        tools:layout_editor_absoluteY="0dp">
+
+                        <ImageView
+                            android:id="@+id/iv_store_restaurant"
+                            android:layout_width="218dp"
+                            android:layout_height="195dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/near_store_restaurant"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_store_restaurant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="32dp"
+                            android:text="@string/near_restaurant_name"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/iv_store_restaurant"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_store_restaurant_open"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:text="@string/near_restaurant_open"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/iv_store_restaurant"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_store_restaurant_description" />
+
+                        <TextView
+                            android:id="@+id/tv_store_restaurant_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:text="@string/near_restaurant_description"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/iv_store_restaurant"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_store_restaurant" />
+
+                        <TextView
+                            android:id="@+id/tv_store_restaurant_event"
+                            android:layout_width="390dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:text="@string/near_restaurant_event"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.476"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/iv_store_restaurant"
+                            app:layout_constraintVertical_bias="0.0" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/store_health"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        tools:layout_editor_absoluteX="-58dp"
+                        tools:layout_editor_absoluteY="8dp">
+
+                        <ImageView
+                            android:id="@+id/iv_store_health"
+                            android:layout_width="218dp"
+                            android:layout_height="195dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/near_store_health"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_store_health"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="32dp"
+                            android:text="@string/near_health_name"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/iv_store_health"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_store_health_open"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:text="@string/near_health_open"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/iv_store_health"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_store_health_description" />
+
+                        <TextView
+                            android:id="@+id/tv_store_health_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="28dp"
+                            android:text="@string/near_health_description"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.505"
+                            app:layout_constraintStart_toEndOf="@+id/iv_store_health"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_store_health" />
+
+                        <TextView
+                            android:id="@+id/tv_store_health_event"
+                            android:layout_width="390dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/near_health_event"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/iv_store_health" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/store_life"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        tools:layout_editor_absoluteX="-43dp"
+                        tools:layout_editor_absoluteY="0dp">
+
+                        <ImageView
+                            android:id="@+id/iv_store_life"
+                            android:layout_width="218dp"
+                            android:layout_height="195dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:src="@drawable/near_store_life"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_store_life"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="40dp"
+                            android:text="@string/near_life_name"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.533"
+                            app:layout_constraintStart_toEndOf="@+id/iv_store_life"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_store_life_open"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:text="@string/near_life_open"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/iv_store_life"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_store_life_description" />
+
+                        <TextView
+                            android:id="@+id/tv_store_life_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:text="@string/near_life_description"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.619"
+                            app:layout_constraintStart_toEndOf="@+id/iv_store_life"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_store_life" />
+
+                        <TextView
+                            android:id="@+id/tv_store_life_event"
+                            android:layout_width="390dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:text="@string/near_life_event"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.476"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/iv_store_life"
+                            app:layout_constraintVertical_bias="0.0" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/store_all"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv_store_all_restaurant"
+                            android:layout_width="101dp"
+                            android:layout_height="97dp"
+                            android:layout_marginStart="16dp"
+                            android:src="@drawable/near_store_restaurant"
+                            app:layout_constraintBottom_toTopOf="@+id/iv_store_all_health"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_chainStyle="packed" />
+
+                        <TextView
+                            android:id="@+id/tv_store_all_restaurant"
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/near_store_all_restaurant"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/iv_store_all_restaurant"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/iv_store_all_restaurant"
+                            app:layout_constraintTop_toTopOf="@+id/iv_store_all_restaurant" />
+
+                        <ImageView
+                            android:id="@+id/iv_store_all_health"
+                            android:layout_width="101dp"
+                            android:layout_height="97dp"
+                            android:layout_marginStart="16dp"
+                            android:src="@drawable/near_store_health"
+                            app:layout_constraintBottom_toTopOf="@+id/iv_store_all_life"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/iv_store_all_restaurant" />
+
+                        <TextView
+                            android:id="@+id/tv_store_all_health"
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/near_store_all_health"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/iv_store_all_health"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/iv_store_all_health"
+                            app:layout_constraintTop_toTopOf="@+id/iv_store_all_health" />
+
+                        <ImageView
+                            android:id="@+id/iv_store_all_life"
+                            android:layout_width="101dp"
+                            android:layout_height="97dp"
+                            android:layout_marginStart="16dp"
+                            android:src="@drawable/near_store_life"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/iv_store_all_health" />
+
+                        <TextView
+                            android:id="@+id/tv_store_all_life"
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/near_store_all_life"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/iv_store_all_life"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/iv_store_all_life"
+                            app:layout_constraintTop_toTopOf="@+id/iv_store_all_life" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#EAE5E5"
+                app:layout_constraintTop_toBottomOf="@+id/tab_layout"
+                tools:layout_editor_absoluteX="-16dp">
+
+                <TextView
+                    android:id="@+id/tv_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/near_tv_class"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_class">
+
+                    <LinearLayout
+                        android:id="@+id/constraint_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:background="#EAE5E5"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="290dp"
+                            android:layout_height="290dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="16dp"
+                            android:backgroundTint="#00ff0000"
+                            app:cardCornerRadius="30dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/near_class_cooking" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="290dp"
+                            android:layout_height="290dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="16dp"
+                            android:backgroundTint="#00ff0000"
+                            app:cardCornerRadius="30dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/near_class_oneday" />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="290dp"
+                            android:layout_height="290dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="16dp"
+                            android:backgroundTint="#00ff0000"
+                            app:cardCornerRadius="30dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/near_class_localfood" />
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        app:itemBackground="@android:color/white"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/near_menu_navigation">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
