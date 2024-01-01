@@ -1,5 +1,17 @@
 <resources>
-  <string name="app_name">파프리카 마켓</string>
+    <string name="app_name">파프리카 마켓</string>
+    <string name="chat_title">채팅</string>
+    <string name="chat_location1">XX동</string>
+    <string name="chat_time1">1주 전</string>
+    <string name="chat_message1">감사합니다! 조심히가세요!</string>
+    <string name="chat_location2">XX동</string>
+    <string name="chat_message2">좋은 거래 했습니다!</string>
+    <string name="chat_time2">2주 전</string>
+    <string name="chat_nav_home">홈</string>
+    <string name="chat_nav_news">동네생활</string>
+    <string name="chat_nav_nearby">내 근처</string>
+    <string name="chat_nav_chat">채팅</string>
+    <string name="chat_nav_profile">나의 당근</string>
   <string name="main_title">군자동</string>
   <string name="main_product_1">에어팟 프로</string>
   <string name="main_product_desc_1">9/31일 구매한 \n한달도 안된 제품이빈다. \n박풀 S급입니다.</string>

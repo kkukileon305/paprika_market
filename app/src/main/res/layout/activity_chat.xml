@@ -244,7 +244,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="홈" />
+                android:text="@string/chat_nav_home" />
         </LinearLayout>
 
         <LinearLayout
@@ -268,7 +268,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="동네생활" />
+                android:text="@string/chat_nav_news" />
         </LinearLayout>
 
         <LinearLayout
@@ -292,7 +292,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="내 근처" />
+                android:text="@string/chat_nav_nearby" />
         </LinearLayout>
 
         <LinearLayout
@@ -316,7 +316,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="채팅" />
+                android:text="@string/chat_nav_chat" />
         </LinearLayout>
 
         <LinearLayout
@@ -340,7 +340,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="나의 당근" />
+                android:text="@string/chat_nav_profile" />
         </LinearLayout>
 
 
