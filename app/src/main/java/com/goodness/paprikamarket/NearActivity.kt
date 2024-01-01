@@ -27,6 +27,11 @@ class NearActivity : AppCompatActivity() {
     private val btnRestaurant : Button by lazy { findViewById(R.id.btn_restaurant) }
 
 
+    private val clHome : ConstraintLayout by lazy { findViewById(R.id.cl_home) }
+    private val clTown : ConstraintLayout by lazy { findViewById(R.id.cl_town) }
+    private val clChat : ConstraintLayout by lazy { findViewById(R.id.cl_chat) }
+    private val clMine : ConstraintLayout by lazy { findViewById(R.id.cl_mine) }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_near)
@@ -94,6 +99,25 @@ class NearActivity : AppCompatActivity() {
             val options = ActivityOptionsCompat.makeCustomAnimation(this, R.anim.near_from_right_enter,R.anim.near_to_right_exit)
             startActivity(intent,options.toBundle())
 
+        }
+
+        clHome.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        clTown.setOnClickListener{
+            val intent = Intent(this, TownActivity::class.java)
+            startActivity(intent)
+        }
+
+        clChat.setOnClickListener{
+            val intent = Intent(this, ChatActivity::class.java)
+            startActivity(intent)
+        }
+        clMine.setOnClickListener{
+            val intent = Intent(this, ProfileActivity::class.java)
+            startActivity(intent)
         }
 
 
