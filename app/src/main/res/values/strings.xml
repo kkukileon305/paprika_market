@@ -61,4 +61,12 @@
   <string name="near_food_tteokbokki_name">엽기떡볶이 군자점</string>
   <string name="near_food_tteokbokki_open">영업시간 \n오후 12:00 ~ 오전 12:00</string>
   <string name="near_food_tteokbokki_description">바로 결제 가능 매장</string>
+  <string name="chat_title">채팅</string>
+  <string name="chat_location1">XX동</string>
+  <string name="chat_time1">1주 전</string>
+  <string name="chat_message1">감사합니다! 조심히가세요!</string>
+  <string name="chat_location2">XX동</string>
+  <string name="chat_message2">좋은 거래 했습니다!</string>
+  <string name="chat_time2">2주 전</string>
 </resources>
+
