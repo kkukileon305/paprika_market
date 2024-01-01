@@ -247,6 +247,7 @@
       />
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_near"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="42dp"
@@ -271,6 +272,7 @@
       />
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_chat"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="42dp"
@@ -295,6 +297,7 @@
       />
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_profile"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="42dp"

@@ -16,7 +16,14 @@ class TownActivity : AppCompatActivity() {
 		)
 	}
 
-	private val homeButton by lazy { findViewById<ConstraintLayout>(R.id.cl_home) }
+	private val menuButtons by lazy {
+		listOf<ConstraintLayout>(
+			findViewById(R.id.cl_home),
+			findViewById(R.id.cl_near),
+			findViewById(R.id.cl_chat),
+			findViewById(R.id.cl_profile),
+		)
+	}
 
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
@@ -26,9 +33,19 @@ class TownActivity : AppCompatActivity() {
 	}
 
 	private fun init() {
-		homeButton.setOnClickListener {
-			finish()
-			overridePendingTransition(R.anim.main_none, R.anim.main_left_to_right)
+		menuButtons.forEach { button ->
+			button.setOnClickListener {
+				val activity = when (button.id) {
+					R.id.cl_home -> MainActivity::class.java
+					R.id.cl_near -> NearActivity::class.java
+					R.id.cl_chat -> ChatActivity::class.java
+					R.id.cl_profile -> ProfileActivity::class.java
+					else -> null
+				}
+				val intent = Intent(this, activity)
+
+				startActivity(intent)
+			}
 		}
 
 		postButtons.forEachIndexed { index, postButton ->
