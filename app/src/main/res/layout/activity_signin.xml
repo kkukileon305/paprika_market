@@ -78,6 +78,7 @@
         />
 
     <LinearLayout
+        android:id="@+id/ll_signin"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginBottom="150dp"
@@ -91,12 +92,35 @@
         >
 
         <TextView
-            android:id="@+id/tv_signin"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:gravity="center"
             android:text="로그인"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_signup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="150dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/main_color_cut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_signin"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="회원가입"
             android:textColor="@color/white"
             android:textSize="24dp"
             android:textStyle="bold" />

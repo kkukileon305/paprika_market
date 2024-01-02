@@ -19,8 +19,8 @@ import java.util.Locale
 
 class StartActivity : AppCompatActivity() {
 
-    private val btn_start1 :Button by lazy{findViewById(R.id.tv_start1)}
-    private val btn_signup1 :Button by lazy{findViewById(R.id.tv_signup1)}
+    private val btn_signin :Button by lazy{findViewById(R.id.ll_signin)}
+    private val btn_signup :Button by lazy{findViewById(R.id.ll_signup)}
 
 
     private lateinit var activityResultLauncher: ActivityResultLauncher<Intent>
@@ -29,13 +29,13 @@ class StartActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_start)
 
-        btn_start1.setOnClickListener{
+        btn_signin.setOnClickListener{
             val intent = Intent(this,SignInActivity::class.java)
             startActivity(intent)
 
         }
 
-        btn_signup1.setOnClickListener{
+        btn_signup.setOnClickListener{
             val intent = Intent(this,SignUpActivity::class.java)
             startActivity(intent)
 
